@@ -1,0 +1,34 @@
+{
+    "name": "krbaidik/laravel-ad-bs-converter",
+    "description": "A Laravel package to convert AD dates to BS and vice versa.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Khubi Ram Baidik (Krbaidik)",
+            "email": "krbaidik0@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Krbaidik\\AdBsConverter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Krbaidik\\AdBsConverter\\BsDateServiceProvider"
+            ],
+            "aliases": {
+                "NepaliDate": "Krbaidik\\AdBsConverter\\NepaliDateConverterFacade"
+            }
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.1",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "nesbot/carbon": "^2.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

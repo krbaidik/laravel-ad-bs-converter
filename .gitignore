@@ -1,0 +1,16 @@
+.idea
+.vs_code
+.fleet
+.phpunit.cache
+build
+composer.lock
+coverage
+docs
+phpunit.xml
+phpstan.neon
+testbench.yaml
+vendor
+node_modules
+# Ignore Mac DS_Store files
+.DS_Store
+**/.DS_Store
