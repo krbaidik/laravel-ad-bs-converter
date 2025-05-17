@@ -44,14 +44,11 @@ class NepaliDateSupport implements \JsonSerializable
             '\\' => ''
         ];
 
-        dd($replacements);
-
         return strtr($format, $replacements);
     }
 
     public function toCarbon(): Carbon
     {
-        // dd($this->dateParts);
         $eng = $this->converter->nepToEng(
             $this->getYear(),
             $this->getMonth(),
